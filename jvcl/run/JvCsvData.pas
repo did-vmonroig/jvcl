@@ -164,8 +164,8 @@ const
 
   JvCsv_MaxCalcDataOffset = 256; // # bytes per record for Calculated Field Data.
 
-  JvCsv_MAXCOLUMNS = 120;
-  JvCsv_MAXLINELENGTH = 16384;
+  JvCsv_MAXCOLUMNS = 250;
+  JvCsv_MAXLINELENGTH = 32768;
   JvCsv_DEFAULT_CSV_STR_FIELD = 80; // If CsvFieldDef doesn't have :123 suffix specifying numeric field length, then default to 80 chars.
   JvCsv_MINLINELENGTH = 10;
   JvCsv_COLUMN_ENDMARKER = $FFFF;
@@ -182,7 +182,7 @@ const
 
   {these values can be changed at runtime, but not at design time,and should only
   be changed before the dataset is opened or any rows are created:}
-  JvCsvDefaultTextBufferSize = 2048; // Default memory allocation sizes are the same as before.
+  JvCsvDefaultTextBufferSize = 32768; // Default memory allocation sizes are the same as before.
   JvCsvDefaultMarginSize = 2;        // Two bytes of margin. Remove at your own risk!
 
 
